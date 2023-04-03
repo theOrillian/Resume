@@ -1,0 +1,54 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+% NOTE: This can be used at https://www.overleaf.com/ to generate a resume
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\name{Greg Graham}{}
+\tagline{Lead Data Architect}
+%\photo{2.5cm}{darwiin}
+\socialinfo{
+	\linkedin{gpgraham}
+	\smartphone{641.691.5576}
+	\email{greg.graham@gmail.com}\\
+	\address{Marshalltown, Iowa, USA}\\
+}
+
+\usepackage{advdate}
+\newcommand{\resumeDate}[1][0]{%
+\begingroup
+\AdvanceDate[#1]%
+\today%
+\endgroup
+}%
+
+\begin{document}
+
+	\makecvheader
+
+	\makecvfooter
+		{\textsc{\selectlanguage{english}\resumeDate[-17]}} % \selectlanguage{english}\today
+		{\textsc{Greg Graham}}
+		{\thepage}
+
+	\input{section_headline}
+	\input{section_competences}				% Section compétence
+%	\input{section_experience_short}		% Section expérience
+	\input{section_work_experience}		% my version of "section_experience_short"
+	%\input{section_langues}					% Section langues
+	\input{section_scolarite}				% Section scholarité
+	%\input{section_interets}				% Section intérêts
+	%\input{section_projets}
+	%\input{section_references} 				% Section références
+
+
+\end{document}
